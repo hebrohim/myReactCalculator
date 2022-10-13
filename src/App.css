@@ -1,0 +1,92 @@
+:root {
+  --primaryColor: rgba(0, 61, 121, 0.59);
+  --secondaryColor: #003d79;
+  --textColor: rgba(255, 255, 255, 1);
+
+}
+
+.container {
+  display: grid;
+  width: 600px;
+  grid-gap: 5px;
+  /* background-color: var(--primaryColor); */
+  padding: 5px;
+}
+
+
+.input {   
+  grid-column-start: 1;
+  grid-column-end: 3; 
+  grid-row-start: 1;
+  grid-row-end: 2; 
+  
+}
+.output {
+  grid-column-start: 1;
+  grid-column-end: 3; 
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  
+}
+.NumbersAndDigits {
+  grid-column-start: 1;
+  grid-column-end: 2; 
+  grid-row-start: 3;
+  grid-row-end: 5; 
+}
+.operators {
+  grid-column-start: 2;
+  grid-column-end: 3; 
+  grid-row-start: 3;
+  grid-row-end: 5; 
+}
+
+
+
+.calculator > div {
+  background-color: rgb(4, 1, 44);
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid var(--primaryColor);
+  color: var(--secondaryColor);
+  font-weight: bold;
+  color: var(--textColor);
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:200px 200px 200px;
+ 
+}
+.grid-item,  .operators > div {
+  background-color: var(--secondaryColor);
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  padding: 15px;
+  text-align: center;
+}
+.grid-item:hover{
+  background-color: var(--primaryColor);
+}
+
+.operators > div:hover{
+  background-color: var(--secondaryColor);
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+
+}
+.operators > div {
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+.input, .output {
+  color: #fff;
+  padding: 10px 0;
+  min-height: 32px;
+  
+}
